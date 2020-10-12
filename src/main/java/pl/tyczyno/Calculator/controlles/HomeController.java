@@ -12,6 +12,12 @@ public class HomeController {
         model.addAttribute("name", name);
         return "hello";
     }
+	
+	@GetMapping("/exception")
+    public String exception() {
+       
+        return "exception";
+    }
 }
 
 
