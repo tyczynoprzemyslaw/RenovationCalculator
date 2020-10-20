@@ -17,19 +17,10 @@
     
   
     <center>
-   			<form:form method="post" modelAttribute="RoomDimensions">
-   				WAll A:<form:input path="a" type="number"/><br>
-   				<form:errors path="a" style="color:red"/></br>
-   				WALL B:<form:input path="b" type="number"/><br>
-   				<form:errors path="b" style="color:red"/></br>
-   				HIGH<form:input path="h" type="number"/><br>
-   				<form:errors path="h" style="color:red"/></br>
-   				<form:button type="submit" >send</form:button>
-   			</form:form>
+   		Wysłałeś swoje dane!
 	
 		
-</fieldset>
-</form>
+
     </center>
 </body>
 </html>

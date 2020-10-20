@@ -1,9 +1,14 @@
 package pl.tyczyno.Calculator;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class RoomDimensions {
 	
 		
 		
+
+	
 
 		double h;
 		double a;
@@ -13,7 +18,34 @@ public class RoomDimensions {
 		double ceilingArea;
 		double[] alldimensions = new double[4];
 		
-		
+		public double getH() {
+			return h;
+		}
+
+
+		public void setH(double h) {
+			this.h = h;
+		}
+
+
+		public double getA() {
+			return a;
+		}
+
+
+		public void setA(double a) {
+			this.a = a;
+		}
+
+
+		public double getB() {
+			return b;
+		}
+
+
+		public void setB(double b) {
+			this.b = b;
+		}
 		
 		public RoomDimensions[] howManyRooms(int roomsNumber) {
 			RoomDimensions[] rooms = new RoomDimensions[roomsNumber];
@@ -22,6 +54,7 @@ public class RoomDimensions {
 		
 		
 		public RoomDimensions( double a, double b,double h) {
+			super();
 			 
 			 this.h=h;
 			 this.a=a;
@@ -29,7 +62,10 @@ public class RoomDimensions {
 		}
 
 		public RoomDimensions() {
-			
+			System.out.println("Constructor");
+			System.out.println(a);
+			System.out.println(b);
+			System.out.println(h);
 		}
 		
 		public double areaWalls() {				
